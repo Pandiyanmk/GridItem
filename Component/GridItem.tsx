@@ -5,6 +5,7 @@ const GridItem = (props) => {
     return (
         <View style={[style.gridItem, { backgroundColor: props.color }]}>
             <Pressable
+                onPress={props.onPress}
                 style={style.button}
                 android_ripple={{ color: '#ccc' }}
             >
